@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Register | UniVibe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">UV</span
+        ><span
+          >Uni<span class="gold">Vibe</span
+          ><small>EVENTS • PEOPLE • CAMPUS</small></span
+        ></a
+      >
+      <nav>
+        <a href="index.html">Home</a><a href="events.html">Explore events</a
+        ><a href="manage.html">Organizer desk</a
+        ><a class="nav-button active" href="register.html">Join an event</a>
+      </nav>
+    </header>
+    <main class="page-wrap narrow">
+      <p class="eyebrow">SAVE YOUR PLACE</p>
+      <h1 class="page-title">You're invited.</h1>
+      <p class="lead page-lead">
+        Choose an event and submit your demo registration.
+      </p>
+      <form id="registrationForm" class="form-card">
+        <label
+          >Full name<input
+            name="fullName"
+            required
+            type="text"
+            maxlength="80"
+            placeholder="e.g. Aanya Sharma" /></label
+        ><label
+          >Campus email<input
+            name="email"
+            required
+            type="email"
+            placeholder="you@college.edu" /></label
+        ><label
+          >Choose an event<select id="eventSelect" name="eventId" required>
+            <option value="">Loading event list...</option>
+          </select></label
+        >
+        <p id="selectedFee" class="fee-summary" aria-live="polite">
+          Choose an event to see its fee.
+        </p>
+        <label
+          >Year of study<select name="year" required>
+            <option value="">Select your year</option>
+            <option>First year</option>
+            <option>Second year</option>
+            <option>Third year</option>
+            <option>Fourth year</option>
+            <option>Postgraduate</option>
+          </select></label
+        ><label class="checkline"
+          ><input name="updates" required type="checkbox" /> I agree to receive
+          event updates from the organizer.</label
+        ><button class="button" type="submit">Submit registration →</button>
+        <p class="form-note">
+          This demo stores registration details in this browser only. It does
+          not collect payment.
+        </p>
+      </form>
+      <p class="back-link"><a href="events.html">← Back to all events</a></p>
+    </main>
+    <footer>
+      <small>© 2026 UniVibe · HTML/CSS/JavaScript viva project</small>
+    </footer>
+  </body>
+</html>

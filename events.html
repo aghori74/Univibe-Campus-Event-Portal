@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Explore Events | UniVibe</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="index.html"
+        ><span class="brand-mark">UV</span
+        ><span
+          >Uni<span class="gold">Vibe</span
+          ><small>EVENTS • PEOPLE • CAMPUS</small></span
+        ></a
+      >
+      <nav>
+        <a href="index.html">Home</a
+        ><a class="active" href="events.html">Explore events</a
+        ><a href="manage.html">Organizer desk</a
+        ><a class="nav-button" href="register.html">Join an event</a>
+      </nav>
+    </header>
+    <main class="page-wrap">
+      <p class="eyebrow">THE CAMPUS CALENDAR</p>
+      <h1 class="page-title">Find your <em>next thing.</em></h1>
+      <p class="lead page-lead">
+        Browse what's happening and choose the moments you want to be part of.
+      </p>
+      <div class="filter-row">
+        <label class="search-control"
+          >Search events<input
+            id="searchEvents"
+            type="search"
+            placeholder="Try music, workshop, or a club" /></label
+        ><label class="search-control"
+          >Category<select id="categoryFilter">
+            <option value="all">All events</option>
+            <option value="workshop">Workshop</option>
+            <option value="arts & music">Arts &amp; music</option>
+            <option value="career">Career</option>
+            <option value="sports">Sports</option>
+            <option value="other">Other</option>
+          </select></label
+        ><span id="resultCount" class="filter-note" aria-live="polite"></span>
+      </div>
+      <div id="eventGrid" class="event-grid" aria-live="polite"></div>
+      <noscript
+        ><p>
+          Please enable JavaScript to search and filter event listings.
+        </p></noscript
+      >
+    </main>
+    <footer>
+      <small>© 2026 UniVibe · HTML/CSS/JavaScript viva project</small>
+    </footer>
+  </body>
+</html>
